@@ -1,0 +1,46 @@
+<div class="topic-index-wrapper">
+  <div class="container">
+    <% @topics.each do |topic| %>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="topic-index-single">
+            <h2 class="topic-author">
+              <%= topic.user.name %>
+            </h2>
+            <%= image_tag topic.image.url %>
+            <ul class = "topic_idx_bar">
+              <% if topic.favorite_users.include?(current_user) %>
+                  <%= link_to favorites_path(topic_id: topic.id), method: :delete do %>
+                   <%= image_tag '/images/icons/topic_heart_red.png', class: 'topic-index-icon', alt: "ハート" %>
+                   <%#= image_tag '/images/icons/topic_heart_red.png', alt: "ハート" %>
+                  <% end %>
+              <% else %>
+                  <% if !topic.favorite_users.include?(current_user) %>
+                    <%= link_to favorites_path(topic_id: topic.id), method: :post do %>
+                      <%= image_tag '/images/icons/topic_heart_black.png', class: 'topic-index-icon', alt: "黒ハート" %>
+                      <%#= image_tag '/images/icons/topic_heart_black.png', alt: "黒ハート" %>
+                    <% end %>
+                  <% end %>
+              <% end %>
+                <%= sprintf("%-7d", topic.favorite_users.count).gsub(/ /, '&nbsp;').html_safe %>
+                <%= link_to comments_path + '?topic_id=' + topic.id.to_s do %>
+                   <%= image_tag '/images/icons/comment.png', class: 'topic-index-icon', alt: "投稿" %>
+                <% end %>
+            </ul>
+            <h3>Comments</h3>
+            <p class="topic-text">
+              <%= topic.user.name + '：' + topic.description %>
+            </p>
+            <ul>
+              <% topic.comments.each do |comment| %>
+              <li>
+                <%= comment.lines %>
+              </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

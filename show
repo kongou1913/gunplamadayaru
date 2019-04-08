@@ -1,0 +1,97 @@
+[1m[1;34mActiveSupport::ToJsonWithActiveSupportEncoder#methods[0m[0m: to_json
+[1m[1;34mActiveSupport::Configurable#methods[0m[0m: config
+[1m[1;34mAbstractController::Base#methods[0m[0m: action_methods  action_name  action_name=  available_action?  controller_path  response_body
+[1m[1;34mActionController::Metal#methods[0m[0m: 
+  content_type     dispatch  location=          middleware_stack?  request=       response=       session        status 
+  content_type=    headers   middleware_stack   performed?         reset_session  response_body=  set_request!   status=
+  controller_name  location  middleware_stack=  request            response       response_code   set_response!  to_a   
+[1m[1;34mActionView::ViewPaths#methods[0m[0m: 
+  _prefixes       append_view_path    formats   locale   lookup_context     template_exists?
+  any_templates?  details_for_lookup  formats=  locale=  prepend_view_path  view_paths      
+[1m[1;34mAbstractController::Rendering#methods[0m[0m: view_assigns
+[1m[1;34mAbstractController::Translation#methods[0m[0m: l  localize  t  translate
+[1m[1;34mActionController::Helpers#methods[0m[0m: helpers
+[1m[1;34mActionDispatch::Routing::PolymorphicRoutes#methods[0m[0m: 
+  edit_polymorphic_path  edit_polymorphic_url  new_polymorphic_path  new_polymorphic_url  polymorphic_path  polymorphic_url
+[1m[1;34mActionDispatch::Routing::UrlFor#methods[0m[0m: full_url_for  route_for  url_for
+[1m[1;34mActionController::UrlFor#methods[0m[0m: url_options
+[1m[1;34mActiveSupport::Benchmarkable#methods[0m[0m: benchmark
+[1m[1;34mActionController::Redirecting#methods[0m[0m: _compute_redirect_to_location  redirect_back
+[1m[1;34mActionView::Rendering#methods[0m[0m: process  rendered_format  view_context  view_context_class  view_context_class=  view_renderer
+[1m[1;34mActionView::Layouts#methods[0m[0m: _layout_conditions  action_has_layout=  action_has_layout?
+[1m[1;34mActionController::Rendering#methods[0m[0m: render_to_string
+[1m[1;34mActionController::Renderers#methods[0m[0m: 
+  _render_to_body_with_renderer  _render_with_renderer_js  _render_with_renderer_json  _render_with_renderer_xml  render_to_body
+[1m[1;34mActionController::Head#methods[0m[0m: head
+[1m[1;34mActionController::ConditionalGet#methods[0m[0m: expires_in  expires_now  fresh_when  http_cache_forever  stale?
+[1m[1;34mAbstractController::Caching::Fragments#methods[0m[0m: 
+  combined_fragment_cache_key  fragment_cache_key  instrument_fragment_cache  write_fragment
+  expire_fragment              fragment_exist?     read_fragment            
+[1m[1;34mAbstractController::Caching::ConfigMethods#methods[0m[0m: cache_store  cache_store=
+[1m[1;34mAbstractController::Caching#methods[0m[0m: view_cache_dependencies
+[1m[1;34mActionController::MimeResponds#methods[0m[0m: respond_to
+[1m[1;34mActionController::BasicImplicitRender#methods[0m[0m: send_action
+[1m[1;34mActionController::ImplicitRender#methods[0m[0m: default_render  method_for_action
+[1m[1;34mActiveSupport::Rescuable#methods[0m[0m: handler_for_rescue  rescue_with_handler
+[1m[1;34mActionController::StrongParameters#methods[0m[0m: params  params=
+[1m[1;34mActionController::FormBuilder#methods[0m[0m: default_form_builder
+[1m[1;34mActiveSupport::Callbacks#methods[0m[0m: run_callbacks
+[1m[1;34mActionController::ForceSSL#methods[0m[0m: force_ssl_redirect
+[1m[1;34mActionController::HttpAuthentication::Basic::ControllerMethods#methods[0m[0m: 
+  authenticate_or_request_with_http_basic  authenticate_with_http_basic  request_http_basic_authentication
+[1m[1;34mActionController::HttpAuthentication::Digest::ControllerMethods#methods[0m[0m: 
+  authenticate_or_request_with_http_digest  authenticate_with_http_digest  request_http_digest_authentication
+[1m[1;34mActionController::HttpAuthentication::Token::ControllerMethods#methods[0m[0m: 
+  authenticate_or_request_with_http_token  authenticate_with_http_token  request_http_token_authentication
+[1m[1;34mActionController::Rescue#methods[0m[0m: show_detailed_exceptions?
+[1m[1;34mActionController::Instrumentation#methods[0m[0m: render  send_data  send_file  view_runtime  view_runtime=
+[1m[1;34mActionDispatch::Routing::RouteSet::MountedHelpers#methods[0m[0m: _main_app  main_app
+[1m[1;34mActiveRecord::Railties::ControllerRuntime#methods[0m[0m: db_runtime  db_runtime=
+[1m[1;34mTurbolinks::Redirection#methods[0m[0m: redirect_to
+[1m[1;34mActionController::Base#methods[0m[0m: 
+  __callbacks                    asset_host=                       fragment_cache_keys?             
+  __callbacks?                   assets_dir                        helpers_path                     
+  _helper_methods                assets_dir=                       helpers_path=                    
+  _helper_methods=               default_asset_host_protocol       helpers_path?                    
+  _helper_methods?               default_asset_host_protocol=      include_all_helpers              
+  _helpers                       default_protect_from_forgery      include_all_helpers=             
+  _helpers=                      default_protect_from_forgery=     include_all_helpers?             
+  _helpers?                      default_static_extension          javascripts_dir                  
+  _process_action_callbacks      default_static_extension=         javascripts_dir=                 
+  _protected_ivars               default_url_options               log_warning_on_csrf_failure      
+  _renderers                     default_url_options=              log_warning_on_csrf_failure=     
+  _renderers=                    default_url_options?              logger                           
+  _renderers?                    enable_fragment_cache_logging     logger=                          
+  _run_process_action_callbacks  enable_fragment_cache_logging=    notice                           
+  _view_cache_dependencies       etag_with_template_digest         per_form_csrf_tokens             
+  _view_cache_dependencies=      etag_with_template_digest=        per_form_csrf_tokens=            
+  _view_cache_dependencies?      etag_with_template_digest?        perform_caching                  
+  _view_paths                    etaggers                          perform_caching=                 
+  _view_paths=                   etaggers=                         relative_url_root                
+  _view_paths?                   etaggers?                         relative_url_root=               
+  _wrapper_options               flash                             request_forgery_protection_token 
+  _wrapper_options=              forgery_protection_origin_check   request_forgery_protection_token=
+  _wrapper_options?              forgery_protection_origin_check=  rescue_handlers                  
+  alert                          forgery_protection_strategy       rescue_handlers=                 
+  allow_forgery_protection       forgery_protection_strategy=      rescue_handlers?                 
+  allow_forgery_protection=      fragment_cache_keys               stylesheets_dir                  
+  asset_host                     fragment_cache_keys=              stylesheets_dir=                 
+[1m[1;34m#<Module:0x00005631b664dc58>#methods[0m[0m: 
+  edit_user_url   rails_blob_representation_url  rails_info_routes_url     root_url                     
+  login_url       rails_blob_url                 rails_info_url            sessions_new_url             
+  logout_url      rails_direct_uploads_url       rails_mailers_url         update_rails_disk_service_url
+  new_user_url    rails_disk_service_url         rails_representation_url  user_url                     
+  pages_help_url  rails_info_properties_url      rails_service_blob_url    users_url                    
+[1m[1;34m#<Module:0x00005631b664dc30>#methods[0m[0m: 
+  edit_user_path   rails_blob_path                 rails_info_properties_path  root_path                     
+  login_path       rails_blob_representation_path  rails_info_routes_path      sessions_new_path             
+  logout_path      rails_direct_uploads_path       rails_mailers_path          update_rails_disk_service_path
+  new_user_path    rails_disk_service_path         rails_representation_path   user_path                     
+  pages_help_path  rails_info_path                 rails_service_blob_path     users_path                    
+[1m[1;34mApplicationController#methods[0m[0m: current_user  danger  info  logged_in?  success  warning
+[1m[1;34m#<Module:0x00007f3492d749c0>#methods[0m[0m: _routes
+[1m[1;34mSessionsController#methods[0m[0m: create  destroy  new
+[1m[1;34minstance variables[0m[0m: 
+  [0;34m@_action_has_layout[0m  [0;34m@_config[0m          [0;34m@_params[0m   [0;34m@_response[0m       [0;34m@_routes[0m                            
+  [0;34m@_action_name[0m        [0;34m@_lookup_context[0m  [0;34m@_request[0m  [0;34m@_response_body[0m  [0;34m@marked_for_same_origin_verification[0m
+[1m[1;34mlocals[0m[0m: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_  [0;33margs[0m  [0;33mexception[0m
