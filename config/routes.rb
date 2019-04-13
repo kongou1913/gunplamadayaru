@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'sessions/new'
 
-  root 'pages#index'
+  root 'topics#index'
   get 'pages/help'
 
   resources :users

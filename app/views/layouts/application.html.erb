@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pictgram</title>
+    <title>Gunpla_Buildings</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -23,17 +23,22 @@
             <% if logged_in? %>
               <li>
                 <%= link_to favorites_index_path do %>
-                  <%= image_tag "icons/heart.png" %>
+                  <%= image_tag "icons/home.png" %>
                 <% end %>
               </li>
               <li>
                 <%= link_to new_topic_path do %>
-                  <%= image_tag "icons/camera.png" %>
+                  <%= image_tag "icons/tsuuchi.png" %>
                 <% end %>
               </li>
               <li>
                 <%= link_to logout_path, method: :delete do %>
-                  <%= image_tag "icons/logout.png" %>
+                  <%= image_tag "icons/search.png" %>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to logout_path, method: :delete do %>
+                  <%= image_tag "icons/write.png" %>
                 <% end %>
               </li>
             <% else %>
