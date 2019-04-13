@@ -17,7 +17,7 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
         <%= link_to root_path do %>
-          <span><%= image_tag "icons/logo.png", class: "navbar-brand" %></span>
+          <span><h1>Gunpla_Buildings</h1></span>
         <% end %>
           <ul class="nav navbar-nav navbar-right">
             <% if logged_in? %>
@@ -44,7 +44,7 @@
             <% else %>
               <li>
                 <%= link_to new_user_path do %>
-                  <%= image_tag "icons/register.png" %>
+                  <%= image_tag "icons/search.png" %>
                 <% end %>
               </li>
               <li>
