@@ -17,34 +17,54 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
         <%= link_to root_path do %>
-          <span><h1>Gunpla_Buildings</h1></span>
+          <span><%= image_tag "icons/taitoru3.png", class: "navbar-brand" %></span>
         <% end %>
           <ul class="nav navbar-nav navbar-right">
             <% if logged_in? %>
               <li>
                 <%= link_to favorites_index_path do %>
-                  <%= image_tag "icons/home.png" %>
+                  <%= image_tag "icons/home.png", title: "ホーム画面へ" %>
                 <% end %>
               </li>
               <li>
                 <%= link_to new_topic_path do %>
-                  <%= image_tag "icons/tsuuchi.png" %>
+                  <%= image_tag "icons/tsuuchi.png", title: "通知" %>
                 <% end %>
               </li>
               <li>
                 <%= link_to logout_path, method: :delete do %>
-                  <%= image_tag "icons/search.png" %>
+                  <%= image_tag "icons/search.png", title: "キーワード、タグ検索"%>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to new_topic_path do %>
+                  <%= image_tag "icons/write.png", title: "投稿"%>
                 <% end %>
               </li>
               <li>
                 <%= link_to logout_path, method: :delete do %>
-                  <%= image_tag "icons/write.png" %>
+                  <%= image_tag "icons/search.png", title: "キーワード、タグ検索"%>
                 <% end %>
               </li>
             <% else %>
+            <li>
+              <%= link_to new_topic_path do %>
+                <%= image_tag "icons/login.png" %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to new_topic_path do %>
+                <%= image_tag "icons/home.png", title: "ホームへ" %>
+              <% end %>
+            </li>
               <li>
                 <%= link_to new_user_path do %>
                   <%= image_tag "icons/search.png" %>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to new_topic_path do %>
+                  <%= image_tag "icons/write.png" %>
                 <% end %>
               </li>
               <li>

@@ -40,7 +40,7 @@ h1, h2 {
 .top-hero-wrapper {
   width: 100vw;
   height: 100vh;
-  background: image-url('top_uc.JPG');
+  background: image-url('s_top_uc.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -67,7 +67,7 @@ h1, h2 {
 .users-new-wrapper {
   width: 100vw;
   height: 100vh;
-  background-image: image-url('top_uc.JPG');
+  background-image: image-url('s_top_uc.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -102,18 +102,18 @@ h1, h2 {
     margin-top: 15px;
   }
 
+  img {
+    height: 40px;
+    @media (max-width: 992px) {
+      height: 35px;
+    }
+    @media (max-width: 580px) {
+      height: 30px;
+    }
+    @media (max-width: 414px) {
+      height: 25px;
+    }  }
 
- img {
-   height: 40px;
-   @media (max-width: 992px) {
-     height: 35px;
-   }
-   @media (max-width: 580px) {
-     height: 30px;
-   }
-   @media (max-width: 414px) {
-     height: 25px;
-   }  }
 
  .navbar-nav{
    float: right;
@@ -145,15 +145,27 @@ h1, h2 {
      padding-left: 20px;
    }
 
+   .topic-index-media{
+    height: auto;
+    @media (max-width: 580px) {
+    padding-top: 65px;
+    }
+    @media (max-width: 414px) {
+    padding-top: 54px;
+    }
+   }
+
    .topic-text {
      padding-right: 20px;
      padding-left: 20px;
    }
-
-   img {
-     margin-top: 10px;
-     margin-bottom: 20px;
-     width: 100%;
+   img1 {
+     float: left;
+   }
+   .image {
+     width: 110px;
+     float: left;
+     display: inline;
    }
 
    .topic-index-icon {
@@ -192,7 +204,7 @@ h1, h2 {
  }
 }
 
-.topic-index-wrapper{
+.topic-index-media{
  height: auto;
  @media (max-width: 580px) {
  padding-top: 65px;

@@ -31,6 +31,9 @@ ActiveRecord::Schema.define(version: 2018_11_22_194907) do
     t.integer "user_id"
     t.string "description"
     t.string "image"
+    t.string "image1"
+    t.string "image2"
+    t.string "image3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
