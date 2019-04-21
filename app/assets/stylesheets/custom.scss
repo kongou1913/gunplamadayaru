@@ -159,15 +159,22 @@ h1, h2 {
      padding-right: 20px;
      padding-left: 20px;
    }
-   img1 {
-     float: left;
-   }
+
    .image {
-     width: 110px;
      float: left;
-     display: inline;
+     width: 450px;
    }
 
+   .img1 {
+     float: left;
+     width: 300px;
+}
+
+   .image-s {
+     width: 110px;
+     float: left;
+   }
+   
    .topic-index-icon {
      width: 35px;
      height: 30px;
