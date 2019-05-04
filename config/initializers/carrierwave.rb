@@ -18,3 +18,15 @@ CarrierWave.configure do |config|
 end
 # 文字化け対策
 CarrierWave::SanitizedFile.sanitize_regexp = /[^[:word:]\.\-\+]/
+
+module CarrierWave
+  module MiniMagick
+    def fix_exif_rotation
+      manipulate! do |img|
+        img.auto_orient
+        img = yield(img) if block_given?
+        img
+      end
+    end
+  end
+end

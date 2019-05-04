@@ -174,7 +174,19 @@ h1, h2 {
      width: 110px;
      float: left;
    }
-   
+
+   .image::after {
+     clear:both;
+     content:"";
+     display:block;
+   }
+
+   .image-s::after {
+     clear:both;
+     content:"";
+     display:block;
+   }
+
    .topic-index-icon {
      width: 35px;
      height: 30px;

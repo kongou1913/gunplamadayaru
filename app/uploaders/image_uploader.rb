@@ -3,6 +3,9 @@ class ImageUploader < CarrierWave::Uploader::Base
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
   process resize_to_limit: [300, 300]
+
+  process :fix_exif_rotation
+
   #require_relative 'config/initializers/carrierwave'
   #require_relative 'config/initializers/database'
 
