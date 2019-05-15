@@ -7,6 +7,7 @@
             <h2 class="topic-author">
               <%= topic.user.name %>
             </h2>
+
             <div class="image">
               <div class="img1"><%= image_tag topic.image.url, :size =>'300x300' %></div>
               <div class="image-s">
@@ -15,6 +16,7 @@
                 <div class="img4"><%= image_tag topic.image3.url, :size =>'100x100' %></div>
               </div>
             </div>
+
             <ul class="topic_idx_bar">
               <% if topic.favorite_users.include?(current_user) %>
                   <%= link_to favorites_path(topic_id: topic.id), method: :delete do %>
@@ -34,15 +36,16 @@
                    <%= image_tag '/images/icons/comment.png', class: 'topic-index-icon', alt: "投稿" %>
                 <% end %>
             </ul>
-            <h3>Comments</h3>
+
             <p class="topic-text">
               <%= topic.user.name + '：' + topic.description %>
             </p>
+            <h3>Comments</h3>
             <ul>
               <% topic.comments.each do |comment| %>
-              <li>
-                <%= comment.lines %>
-              </li>
+                <li>
+                  <%= comment.lines %>
+                </li>
               <% end %>
             </ul>
           </div>

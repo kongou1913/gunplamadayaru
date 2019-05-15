@@ -22,6 +22,14 @@
           </div>
 
           <div class="form-group">
+            <%= f.label :"grade" %><br>
+            <%= f.select :grade, [["HG", "HG"], ["MG", "MG"], ["PG", "PG"], ["RG", "RG"], ["RE", "RE"], ["SD", "SD"], ["旧キット", "旧キット"]] %>
+          </div>
+
+          <%= f.label :"作品" %><br>
+          <%= f.select :series, [["機動戦士ガンダム", "機動戦士ガンダム"], ["機動戦士Zガンダム", "機動戦士Zガンダム"], ["機動戦士ガンダムZZ", "機動戦士ガンダムZZ"], ["機動戦士ガンダム逆襲のシャア", "機動戦士ガンダム逆襲のシャア"], ["機動戦士ガンダムF91", "機動戦士ガンダムF91"], ["機動戦士Vガンダム", "機動戦士Vガンダム"], ["起動武闘伝Gガンダム", "起動武闘伝Gガンダム"]] %>
+
+          <div class="form-group">
             <%= f.label :description %>
             <%= f.text_area :description, class: 'form-control' %>
           </div>
